@@ -135,7 +135,7 @@ def test_image_filename_defaults():
     nt.assert_is_none(img._repr_jpeg_())
 
 def _get_inline_config():
-    from ipykernel.pylab.config import InlineBackend
+    from matplotlib_inline.config import InlineBackend
     return InlineBackend.instance()
 
 
@@ -457,3 +457,7 @@ def test_display_handle():
         'update': True,
     })
 
+
+@nt.raises(FileNotFoundError)
+def test_image_bad_filename_raises_proper_exception():
+    display.Image("/this/file/does/not/exist/")._repr_png_()

@@ -181,7 +181,7 @@ extras_require = dict(
         "pygments",
         "nbformat",
         "ipykernel",
-        "numpy>=1.16",
+        "numpy>=1.17",
     ],
     terminal=[],
     kernel=["ipykernel"],
@@ -191,15 +191,16 @@ extras_require = dict(
 )
 
 install_requires = [
-    'setuptools>=18.5',
-    'jedi>=0.16',
-    'decorator',
-    'pickleshare',
-    'traitlets>=4.2',
-    'prompt_toolkit>=2.0.0,<3.1.0,!=3.0.0,!=3.0.1',
-    'pygments',
-    'backcall',
-    'stack_data',
+    "setuptools>=18.5",
+    "jedi>=0.16",
+    "decorator",
+    "pickleshare",
+    "traitlets>=4.2",
+    "prompt_toolkit>=2.0.0,<3.1.0,!=3.0.0,!=3.0.1",
+    "pygments",
+    "backcall",
+    "stack_data",
+    "matplotlib-inline",
 ]
 
 # Platform-specific dependencies:
